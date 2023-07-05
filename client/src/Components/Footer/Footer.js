@@ -10,7 +10,7 @@ const Index = () => {
                     <div className="col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         {/* <!-- <h1 className="justify-content-center align-items-center d-flex">STF</h1> --> */}
                         <div className="d-flex justify-content-center align-items-center">
-                            <img className="logo mb-5 mt-2" src={"./images/rcai.png"} alt=""
+                            <img className="logo_nav mb-5 mt-2" src={"./images/rcai.png"} alt=""
                             />
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
@@ -67,12 +67,12 @@ const Index = () => {
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Contact Us</h3>
                         <div className='thirdCol-inner-div'>
                             <i className="bi bi-telephone pe-2"></i> 0315-8951125<br />
-                            <i className="bi bi-envelope pe-2"></i> koder_club@gmail.com<br />
+                            <i className="bi bi-envelope pe-2"></i> rcai_lab@gmail.com<br />
                             <i className="bi bi-globe pe-2"></i> STForce.surge.sh<br />
-                            <i className="bi bi-geo-alt pe-2"></i>CSIT Department,Main University Rd, NED University Of Engineering & Technology, Karachi,
+                            <i className="bi bi-geo-alt pe-2"></i>1st Floor Smart City Lab - HPCC Building NED University of Engineering and Technology, Main University Road
                             Karachi City, Sindh 75270
                             <iframe className="d-flex my-4 mx-auto"
-                                title='Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0343930461104!2d67.11112897486885!3d24.93089824243632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338bf66073b67%3A0x2a472ce9ccfc811a!2sCSIT%20Department!5e0!3m2!1sen!2sus!4v1681510766636!5m2!1sen!2sus" width="90%" height="230" style={{ borderRadius: "16px", border: "0" }} allowFullScreen="" loading="lazy"></iframe>
+                                title='Address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.9444764512295!2d67.109617075383!3d24.933961342312482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3392b826ab531%3A0x1c9b5065137ef37f!2sSmart%20City%20Lab%20National%20Centre%20for%20Artificial%20Intelligence%20NED%20University!5e0!3m2!1sen!2s!4v1688579720236!5m2!1sen!2s" width="90%" height="230" style={{ borderRadius: "16px", border: "0" }} allowFullScreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -80,5 +80,6 @@ const Index = () => {
         </>
     )
 }
+
 
 export default Index
