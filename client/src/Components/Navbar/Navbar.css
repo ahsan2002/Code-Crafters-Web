@@ -4,7 +4,7 @@ header {
     height: 8rem;
     padding: 0 4.8rem;
     /* background: linear-gradient(135deg, #7B33FD, #8332FD, #b83ce4) !important; */
-    background: #1a2238;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@ header {
     width: auto;
 }
 
-.rotateY-logo:hover {
+/* .rotateY-logo:hover {
     transform: rotateY(360deg);
     -moz-transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
@@ -39,7 +39,7 @@ header {
     transition: 2.0s ease;
     -moz-transition: 2.0s ease;
     -webkit-transition: 2.0s ease;
-}
+} */
 
 
 /* ----------------------- Navbar Style ---------------------------- */
@@ -65,7 +65,8 @@ header {
     font-weight: 500;
     text-transform: uppercase;
     /* color: #212529; */
-    color: #fff;
+    /* color: #fff; */
+    color: rgb(153, 153, 153);
     transition: color 0.3s linear;
     /* hover effect acha nzr aye jbhi  */
 }
@@ -173,9 +174,9 @@ header {
     content: '';
     position: absolute;
     width: 100%;
-    height: 2.3px;
+    height: 4.5px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: lightblue;
     bottom: -4px;
     left: 0;
     transform-origin: right;
