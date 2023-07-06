@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../../Layout/layout'
 import FrontPage from '../HomePageComponents/FrontPageComponent/FrontPage'
-import ContactUs from '../HomePageComponents/ContactUsComponent/ContactUs'
+import Team from '../HomePageComponents/TeamComponent/Team'
+import Sponser from '../HomePageComponents/SponserComponent/Sponser'
 
 const Home = () => {
     return (
@@ -9,6 +10,9 @@ const Home = () => {
             <Layout>
                 <FrontPage />
                 <ContactUs />
+                <FrontPage />
+                <Team />
+                <Sponser />
             </Layout>
         </>
     )
