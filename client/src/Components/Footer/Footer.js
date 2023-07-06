@@ -22,6 +22,12 @@ const Index = () => {
                             <button type="button" className=" my-btn-F btn  px-4"
                                 style={{ borderRadius: "30px" }}>Sponsor Us</button>
                         </div>
+                        <NavLink to='/contact-us'>
+                            <div className="justify-content-center align-items-center d-flex">
+                                <button type="button" className=" my-btn-F btn  px-4"
+                                    style={{ borderRadius: "30px" }}>Sponser Us</button>
+                            </div>
+                        </NavLink>
                     </div>
                     <div className=" secondCol col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Important Links</h3>

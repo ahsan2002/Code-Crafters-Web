@@ -24,12 +24,14 @@ const Header = () => {
     }, [])
 
     return (
-        <header className={`${isVisible ? 'default-header  scroll-header' : 'default-header '}`}>
-        <NavLink to={'/'}>
+        <header className={`${isVisible ? 'default-header  scroll-header' : 'default-header transparent'}`}>
+            <NavLink to={'/'}>
                 {/* <h2 className='nav-heading'>RENTA</h2> */}
                 <img className='logo rotateY-logo' src="/images/rcai.png" alt="" />
             </NavLink>
-            <Navbar />
+            <Navbar
+                isTransparent={!isVisible}
+            />
         </header>
     )
 }

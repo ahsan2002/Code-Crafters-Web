@@ -7,11 +7,11 @@ import ScrollToTop from '../Components/ScrollToTop/ScrollToTop'
 const Layout = ({ children }) => {
     return (
         <>
-        <Header/>
-        <ScrollToTop />
-        {children}
-        <BottomToTop />
-        <Footer/>
+            <Header />
+            <ScrollToTop />
+            {children}
+            <BottomToTop />
+            <Footer />
         </>
     )
 }
