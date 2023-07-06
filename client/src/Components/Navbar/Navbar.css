@@ -137,7 +137,7 @@ header {
         /*header my relative ki vi hy*/
         top: 30%;
         right: 10%;
-        color: #3e92f2;
+        color: #fff;
         z-index: 9999;
     }
 
@@ -151,7 +151,7 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #fff;
+        background-color: #3e92f2;
 
         display: flex;
         justify-content: center;
@@ -166,7 +166,7 @@ header {
     }
 
     .active .navbar-lists {
-        background: #fff;
+        background: #3e92f2;
         visibility: visible;
         opacity: 1;
         transform: translateX(0);
@@ -183,7 +183,7 @@ header {
 
 /* multipage web */
 .navbar-link {
-    color: #fff;
+    color: #3e92f2;
     position: relative;
     text-decoration: none;
 }
