@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Navbar from './Navbar.js'
 import './Navbar.css'
 const Header = () => {
@@ -23,8 +23,13 @@ const Header = () => {
         return () => window.removeEventListener('scroll', listenToScroll) // yhn py forn apki app sy scroll data dlt krdega issy load nh brhga apki app py warna bar bar scroll ky data load pr ky hang hoskta
     }, [])
 
+    const location = useLocation()
+    const currentUrl = location.pathname;
+
+    const visibleStyle = currentUrl == '/' ? 'transparent' : ""
+    console.log(visibleStyle)
     return (
-        <header className={`${isVisible ? 'default-header  scroll-header' : 'default-header transparent'}`}>
+        <header className={`${isVisible ? 'default-header  scroll-header' : 'default-header ' + visibleStyle}`}>
             <NavLink to={'/'}>
                 {/* <h2 className='nav-heading'>RENTA</h2> */}
                 <img className='logo rotateY-logo' src="/images/rcai.png" alt="" />
