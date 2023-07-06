@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { FiAlignRight, FiX } from "react-icons/fi";
 import './Navbar.css'
 
-const Navbar = ({ isTransparent }) => {
+const Navbar = ({ isTransparent = false }) => {
 
     const [activeMenu, setActiveMenu] = useState()
+    const location = useLocation()
+    const currentUrl = location.pathname;
+    // console.log(currentUrl, typeof currentUrl)
 
-    const navLinkStyle = isTransparent ? "navbar-link home-link transparentColor" : 'navbar-link home-link'
+    const navLinkStyle = currentUrl == '/' ? isTransparent ? "navbar-link home-link transparentColor" : 'navbar-link home-link' : 'navbar-link home-link';
     console.log(isTransparent)
     return (
         <>
