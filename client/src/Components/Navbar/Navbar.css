@@ -127,7 +127,6 @@ header {
 
     .mobile-nav--btn .mobile-nav--icon {
         font-size: 4.2rem;
-        color: #3e92f2;
     }
 
     .active .mobile-nav--icon {
@@ -151,7 +150,10 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #3e92f2;
+        /* background-color: ; */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
 
         display: flex;
         justify-content: center;
@@ -166,7 +168,10 @@ header {
     }
 
     .active .navbar-lists {
-        background: #3e92f2;
+        /* background: #3e92f2; */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
         visibility: visible;
         opacity: 1;
         transform: translateX(0);

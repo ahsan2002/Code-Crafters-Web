@@ -18,10 +18,6 @@ const Index = () => {
                         <p className="pera-top"
                             style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>A community of like-minded individuals who share a passion for coding. We believe that learning is a lifelong process, and that's why we encourage our members to explore new ideas and technologies.
                         </p>
-                        <div className="justify-content-center align-items-center d-flex">
-                            <button type="button" className=" my-btn-F btn  px-4"
-                                style={{ borderRadius: "30px" }}>Sponsor Us</button>
-                        </div>
                         <NavLink to='/contact-us'>
                             <div className="justify-content-center align-items-center d-flex">
                                 <button type="button" className=" my-btn-F btn  px-4"
