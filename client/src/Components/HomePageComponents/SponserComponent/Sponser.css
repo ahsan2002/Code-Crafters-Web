@@ -1,0 +1,107 @@
+.sponser_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px
+}
+
+.sponser_main > div{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sponser_main > div > h3 {
+    color: rgb(10,88,202);
+}
+
+.sponser_main > div > h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3.8rem;
+    letter-spacing: 0.5rem;
+}
+
+.sponser_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+
+
+.sponser_inner > div{
+    border: 1px solid #444675;
+    flex: 0 0 25%;
+    max-width: 25%;
+    width: 90%;
+    height: 240px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.sponser_inner > div > img{
+    width: 150px;
+    transition-duration: 300ms;
+    height: 150px;
+    opacity: 0.5;
+}
+.sponser_inner > div >:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.my_sponser_btn {
+    color: white;
+    /* background: #000046; */
+    /* background: #000428; */
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: width 1s ease;
+    width: 20rem !important;
+    font-size: 1.5rem;
+}
+
+.my_sponser_btn:hover {
+    cursor: pointer;
+    border: 2px solid #fff;
+    /* background: linear-gradient(to left, #141e30, #243b55); */
+    /* width: 900% !important; */
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .sponser_inner > div > img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .sponser_inner > div{
+        height: 100px;
+        padding: 20px;
+    }
+
+    .sponser_inner{
+        width: 80%;
+    }
+}

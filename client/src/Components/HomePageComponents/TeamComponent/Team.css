@@ -1,0 +1,25 @@
+.team_card_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+.main-sponser-heading {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 3.8rem;
+    letter-spacing: 0.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .team_card_main {
+        gap: 60px;
+    }
+
+}

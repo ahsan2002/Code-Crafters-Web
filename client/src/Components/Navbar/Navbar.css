@@ -1,10 +1,28 @@
 /* ----------------------- header Style ---------------------------- */
+/* body {
+    background-color: red;
+} */
+
+.transparent {
+    background-color: rgba(255, 255, 255, 0) !important;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white !important;
+}
+
+.transparentColor {
+    color: white !important;
+}
 
 header {
-    height: 8rem;
+    height: 6rem;
     padding: 0 4.8rem;
     /* background: linear-gradient(135deg, #7B33FD, #8332FD, #b83ce4) !important; */
-    background: #1a2238;
+    /* background: #fff; */
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +42,12 @@ header {
 }
 
 .logo {
-    height: 6rem;
+    height: 5.5rem;
     /* margin-bottom: 0.5rem; */
     width: auto;
 }
 
-.rotateY-logo:hover {
+/* .rotateY-logo:hover {
     transform: rotateY(360deg);
     -moz-transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
@@ -39,7 +57,7 @@ header {
     transition: 2.0s ease;
     -moz-transition: 2.0s ease;
     -webkit-transition: 2.0s ease;
-}
+} */
 
 
 /* ----------------------- Navbar Style ---------------------------- */
@@ -65,7 +83,8 @@ header {
     font-weight: 500;
     text-transform: uppercase;
     /* color: #212529; */
-    color: #fff;
+    /* color: #fff; */
+    color: rgb(153, 153, 153);
     transition: color 0.3s linear;
     /* hover effect acha nzr aye jbhi  */
 }
@@ -108,7 +127,6 @@ header {
 
     .mobile-nav--btn .mobile-nav--icon {
         font-size: 4.2rem;
-        color: #fff;
     }
 
     .active .mobile-nav--icon {
@@ -132,7 +150,10 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: #fff;
+        /* background-color: ; */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
 
         display: flex;
         justify-content: center;
@@ -147,7 +168,10 @@ header {
     }
 
     .active .navbar-lists {
-        background: #1a2238;
+        /* background: #3e92f2; */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
         visibility: visible;
         opacity: 1;
         transform: translateX(0);
@@ -164,7 +188,7 @@ header {
 
 /* multipage web */
 .navbar-link {
-    color: #fff;
+    color: #3e92f2;
     position: relative;
     text-decoration: none;
 }
@@ -173,9 +197,9 @@ header {
     content: '';
     position: absolute;
     width: 100%;
-    height: 2.3px;
+    height: 4.5px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #3e92f2;
     bottom: -4px;
     left: 0;
     transform-origin: right;

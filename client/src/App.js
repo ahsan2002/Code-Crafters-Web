@@ -1,6 +1,11 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Components/Home/Home'
+import ContactUs from './Components/ContactUsComponent/ContactUs'
+// import AboutUs from './Components/AboutUs/AboutUs'
+import AboutUs from './Components/AboutUs/AboutUs'
+import Event from './Components/EventComponent/Event'
+import MemberReg from './Components/MemberRegistration/MemberRegistration'
 
 
 const App = () => {
@@ -9,6 +14,22 @@ const App = () => {
     {
       path: '/',
       element: <Home />
+    },
+    {
+      path: '/contact-us',
+      element: <ContactUs />
+    },
+    {
+      path: '/about',
+      element: <AboutUs/>
+    },
+    {
+      path: '/events',
+      element: <Event/>
+    },
+    {
+      path: '//member-registration',
+      element: <MemberReg/>
     },
   ])
   return (

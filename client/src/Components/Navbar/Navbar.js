@@ -1,34 +1,40 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { FiAlignRight, FiX } from "react-icons/fi";
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ isTransparent = false }) => {
 
     const [activeMenu, setActiveMenu] = useState()
+    const location = useLocation()
+    const currentUrl = location.pathname;
+    // console.log(currentUrl, typeof currentUrl)
+
+    const navLinkStyle = currentUrl == '/' ? isTransparent ? "navbar-link home-link transparentColor" : 'navbar-link home-link' : 'navbar-link home-link';
+    console.log(isTransparent)
     return (
         <>
             <nav>
                 <div className={activeMenu ? "navbar active" : "navbar"}>
                     <ul className="navbar-lists">
                         <li>
-                            <NavLink to='/' className='navbar-link home-link'
+                            <NavLink to='/' className={navLinkStyle}
                                 onClick={() => { setActiveMenu(false) }}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/about' className='navbar-link home-link'
+                            <NavLink to='/about' className={navLinkStyle}
                                 onClick={() => { setActiveMenu(false) }}>About</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/blogs' className='navbar-link home-link'
+                        {/* <li>
+                            <NavLink to='/blogs' className={navLinkStyle}
                                 onClick={() => { setActiveMenu(false) }}>Blogs</NavLink>
-                        </li>
+                        </li> */}
                         <li>
-                            <NavLink to='/events' className='navbar-link home-link'
+                            <NavLink to='/events' className={navLinkStyle}
                                 onClick={() => { setActiveMenu(false) }}>Events</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/contact-us' className='navbar-link home-link'
+                            <NavLink to='/contact-us' className={navLinkStyle}
                                 onClick={() => { setActiveMenu(false) }}>Contact Us</NavLink>
                         </li>
                     </ul>
