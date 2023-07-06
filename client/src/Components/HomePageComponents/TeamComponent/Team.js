@@ -8,7 +8,7 @@ const Team = () => {
     <>
     <section className="container-fluid section-sponser">
         <div>
-            <h2 className="text-center main-sponser-heading">Our Team</h2>
+            <h2 className="text-center main-sponser-heading">OUR TEAM</h2>
         </div>
             <div className='team_card_main'>
                 <TeamCard/>

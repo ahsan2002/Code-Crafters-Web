@@ -19,10 +19,10 @@ const Navbar = () => {
                             <NavLink to='/about' className='navbar-link home-link'
                                 onClick={() => { setActiveMenu(false) }}>About</NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink to='/blogs' className='navbar-link home-link'
                                 onClick={() => { setActiveMenu(false) }}>Blogs</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink to='/events' className='navbar-link home-link'
                                 onClick={() => { setActiveMenu(false) }}>Events</NavLink>
