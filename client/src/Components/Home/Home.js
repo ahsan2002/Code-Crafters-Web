@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../Layout/layout'
+import Layout from '../../Layout/Layout'
 import FrontPage from '../HomePageComponents/FrontPageComponent/FrontPage' 
 import Team from '../HomePageComponents/TeamComponent/Team'
 import Sponser from '../HomePageComponents/SponserComponent/Sponser'

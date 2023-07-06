@@ -20,7 +20,7 @@ const Index = () => {
                         </p>
                         <div className="justify-content-center align-items-center d-flex">
                             <button type="button" className=" my-btn-F btn  px-4"
-                                style={{ borderRadius: "30px" }}>Register</button>
+                                style={{ borderRadius: "30px" }}>Sponser Us</button>
                         </div>
                     </div>
                     <div className=" secondCol col-lg-3 col-mg-3 col-10 pt-4 mt-3">
@@ -58,7 +58,7 @@ const Index = () => {
                                     type="button"
                                     className="my-btn-F btn px-4"
                                     style={{ borderRadius: "30px" }}
-                                >Join US
+                                >Join Us
                                 </button>
                             </div>
                         </NavLink>
