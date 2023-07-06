@@ -40,23 +40,18 @@
   }
 
   .content-container h3{
-    color: white;
-    font-size: 30px;
+    color: rgb(232, 232, 232);
+    font-size: 25px;
     font-weight: bold;
   }
 
 
   .content-container h2{
-    color: white;
+    color: rgb(242, 235, 235);
     text-align: justify;
+    font-size: 19px;
   }
 
-  .content-container hr{
-    width: 8rem;
-    margin-bottom: 2rem;
-  }
-
-  
   @media (min-width: 768px) {
     .about-page {
       flex-direction: row;
