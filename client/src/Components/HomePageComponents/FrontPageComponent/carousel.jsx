@@ -25,17 +25,31 @@ const Carousel = () => {
     return (
         <div className="carousel">
             {slides.map((slide, index) => (
-                <div
-                    key={index}
-                    className={`carousel-slide ${index === currentSlide ? 'active' : ''}`}
-                    style={{ 
-                        backgroundImage: `url(${slide}`,
-                        
-                    }}
-                >
-                    <div className="carousel-content">
-                        <h2>ME</h2>
+                <div>
+
+                    {/* Carousel SLides */}
+                    <div
+                        key={index}
+                        className={`carousel-slide ${index === currentSlide ? 'active' : ''} ${index !== 1 ? "grayscale" : ""}`}
+                        style={{
+                            backgroundImage: `url(${slide}`,
+                        }}
+                    >
                     </div>
+
+                    <div className={`carousel-content-container ${index === currentSlide ? 'active' : ''}`}>
+                        <div className="carousel-content">
+                            <h1 className='title' > WELCOME TO
+                                <span
+                                    style={{
+                                        color: "linear-gradient(to right, #004e92, #000428)",
+                                    }}
+                                    className='title'
+                                > RCAI</span></h1>
+                            <div className='subHeading'>Innovation | Inspiration | Impact</div>
+                        </div>
+                    </div>
+
                 </div>
             ))}
         </div>
