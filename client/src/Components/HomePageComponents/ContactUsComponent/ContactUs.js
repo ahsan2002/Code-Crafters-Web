@@ -1,46 +1,28 @@
-import {React,useState} from 'react'
-import ContactUsCard from './ContactUsCard/ContactUsCard'
-// import layout from '../../Layout/Layout'
-import Layout from '../../Layout/Layout'
+import React from 'react';
 import './ContactUs.css'
 
 const ContactUs = () => {
-  // const [events, setEvents] = useState(eventData);
+    return (
 
-    // useEffect(() => {
-    //     filterEvents('present')
-    // }, [])
-
-
-    // const filterEvents = (myEvent) => {
-    //     const updatedEvents = eventData.filter((elem) => {
-    //         return elem.eventMode === myEvent;
-
-    //     });
-    //     setEvents(updatedEvents);
-    // }
-  return (
-    <Layout>
-      <ContactUsCard/>
-
-      <div className='container'>
-                <div className='row d-flex justify-content-center'>
-                    <div className='col-10 col-lg-4 col-md-4'>
-                        <div className='event-nav'>
-                            <h2 onClick={() => console.log('previous')} className='event-nav-h2'>Contact Us</h2>
-                            <h2 onClick={() => console.log('present')} className='event-nav-h2'>Sponser Us</h2>
-                        </div>
+        <div className='contactUsContainer'>
+            <div id='contactus'>
+                {/* The Headings At the Start */}
+                <div className='headings'>
+                    <div className='heading1'>
+                        HAVE ANY QUERIES?
+                    </div>
+                    <div className='heading2'>
+                        CONTACT US
                     </div>
                 </div>
-                
-            </div>
-      
-            <div className='contactUsContainer1'>
-            <div id='contactus'>
 
                 {/* The Form And Contact Information */}
-                <div className='content1'>
+                <div className='content'>
+
+
                     <form action="">
+
+
                         {/* contact form */}
                         <div className='mainForm'>
 
@@ -108,18 +90,7 @@ const ContactUs = () => {
 
             </div>
         </div>
-
-
-
-    </Layout>
-  )
+    );
 }
 
-export default ContactUs
-
-
-
-
-
-
-
+export default ContactUs;
