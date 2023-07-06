@@ -4,6 +4,7 @@ import Home from './Components/Home/Home'
 import ContactUs from './Components/ContactUsComponent/ContactUs'
 // import AboutUs from './Components/AboutUs/AboutUs'
 import AboutUs from './Components/AboutUs/AboutUs'
+import Event from './Components/EventComponent/Event'
 
 
 const App = () => {
@@ -20,6 +21,10 @@ const App = () => {
     {
       path: '/about',
       element: <AboutUs/>
+    },
+    {
+      path: '/events',
+      element: <Event/>
     },
   ])
   return (

@@ -54,8 +54,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    /* background: #101011; */
-    padding: 20px 0;
+    background: #101011;
+    padding: 50px 0;
+    align-items: center;
 }
 
 #contactus {
@@ -69,21 +70,19 @@
     color: white;
 }
 
-#contactus .heading1 {
-    font-size: 1.8rem;
-    letter-spacing: 8px;
-}
 
-#contactus .heading2 {
+
+#contactus .heading3 {
     font-size: 4rem;
     letter-spacing: 2px;
+    color: #3e92f2;
 }
 
 .content1 {
     padding: 30px 25px;
     /* background-color: rgba(252, 243, 243, 0.438); */
     /* background-color: rgba(32, 30, 30, 0.05); */
-    background: #101011;
+    background-color: rgba(255, 255, 255, 0.05);
     /* background-color: #000428; */
     border-radius: 5px;
     /* color: white; */
