@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel.css';
+import { NavLink } from 'react-router-dom';
 
 // const images =
 
@@ -30,7 +31,7 @@ const Carousel = () => {
                     {/* Carousel SLides */}
                     <div
                         key={index}
-                        className={`carousel-slide ${index === currentSlide ? 'active' : ''} ${index !== 1 ? "grayscale" : ""}`}
+                        className={`carousel-slide ${index === currentSlide ? 'active' : ''} `}
                         style={{
                             backgroundImage: `url(${slide}`,
                         }}
@@ -47,7 +48,28 @@ const Carousel = () => {
                                     className='title'
                                 > RCAI</span></h1>
                             <div className='subHeading'>Innovation | Inspiration | Impact</div>
+
+                            <div className="carousel-button-container">
+                                <NavLink to='/contact-us'>
+                                    <div className="justify-content-center align-items-center d-flex">
+                                        <button type="button" className=" my-btn-F btn  px-4"
+                                            style={{ borderRadius: "7px" }}>Sponser Us</button>
+                                    </div>
+                                </NavLink>
+                                <NavLink to='/member-registration'>
+                                    <div className="justify-content-center align-items-center d-flex">
+                                        <button
+                                            type="button"
+                                            className="my-btn-F btn px-4"
+                                            style={{ borderRadius: "7px" }}
+                                        >Join Us
+                                        </button>
+                                    </div>
+                                </NavLink>
+                            </div>
                         </div>
+
+
                     </div>
 
                 </div>
