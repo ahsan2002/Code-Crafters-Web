@@ -26,7 +26,7 @@ const Sponser = () => {
             </div>
         </div>
 
-        <NavLink to='/member-registration'>
+        <NavLink to='/contact-us'>
                             <div className="justify-content-center align-items-center d-flex">
                                 <button
                                     type="button"

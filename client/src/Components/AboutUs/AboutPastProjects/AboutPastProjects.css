@@ -1,6 +1,6 @@
 section{
     margin-top: 30px;
-    margin-bottom: 30PX;
+    margin-bottom: 30px;
 }
 
 article {
@@ -109,7 +109,7 @@ article {
   }
 
   .article-wrapper{
-    height: 480px;
+    height: 430px;
   }
   
   @media screen and (max-width: 960px) {

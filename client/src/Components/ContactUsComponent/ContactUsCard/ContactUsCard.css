@@ -1,38 +1,40 @@
-.event-page-info {
+.contact_card_main {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     flex-wrap: wrap;
-    gap: 65px;
-    padding-bottom: 50px;
-    margin-top: 30px;
+    margin: 60px 0px;
 }
 
-.event-page-info-data {
+
+.card-contact {
     display: flex;
-    gap: 12px;
-    background-color: #3e92f2;
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    background: linear-gradient(to right, #004e92, #000428);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    gap: 15px;
+    padding: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.event-page-info-h4 {
-    font-weight: 700;
-    font-size: 1.7rem;
-    color: #1a2238;
+
+.card-contact h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
 }
 
-.event-page-info-p {
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: #fff;
-
+.card-contact p {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .event-page-info {
-        gap: 30px;
-        column-gap: 2rem;
-    }
-}
