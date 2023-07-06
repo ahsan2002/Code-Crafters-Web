@@ -11,7 +11,6 @@ const Home = () => {
             <Layout>
                 <FrontPage />
                 <ContactUs />
-                <FrontPage />
                 <Team />
                 <Sponser />
             </Layout>
